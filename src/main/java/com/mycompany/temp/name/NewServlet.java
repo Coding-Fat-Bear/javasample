@@ -21,8 +21,6 @@ public class NewServlet extends HttpServlet {
             throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         id_dao dao = new id_dao();
-        RequestDispatcher rd = request.getRequestDispatcher("result.jsp");
-        rd.forward(request, response);
 
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
