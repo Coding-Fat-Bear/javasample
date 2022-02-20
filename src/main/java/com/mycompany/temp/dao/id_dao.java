@@ -15,9 +15,9 @@ public class id_dao {
       public id getid(int id)
     {
         id a = new id();
-        a.setId(10);
-        a.setUsername("Lijoe");
-        a.setPassword("classic123");
+//        a.setId(10);
+//        a.setUsername("Lijoe");
+//        a.setPassword("classic123");
         return a;
     }
 }
