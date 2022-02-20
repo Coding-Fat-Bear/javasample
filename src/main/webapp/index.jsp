@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <p>Enter your ID</p>
-    <form action="getname">
+    <form action="NewServlet">
         <input type="text" name="id">
         <input type="submit">
         
