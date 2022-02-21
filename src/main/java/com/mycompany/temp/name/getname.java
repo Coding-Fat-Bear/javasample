@@ -1,8 +1,8 @@
 
 package com.mycompany.temp.name;
 
-import com.mycompany.sample.dao.id_dao;
-import com.mycompany.sample.model.id;
+import com.mycompany.temp.dao.id_dao;
+import com.mycompany.temp.model.id;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

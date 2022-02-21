@@ -1,4 +1,4 @@
-<%-- 
+    <%-- 
     Document   : result
     Created on : Feb 21, 2022, 1:15:57 AM
     Author     : AGI03
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body bgcolor="orange">
-        <p> hi jsp 1 </p>
+       <%= request.getAttribute("id") %>
     </body>
 </html>

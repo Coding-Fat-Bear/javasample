@@ -38,8 +38,5 @@ public class id {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "id{" + "id=" + id + ", username=" + username + ", password=" + password + '}';
-    }
+    
 }

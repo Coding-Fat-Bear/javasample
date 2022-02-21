@@ -5,14 +5,14 @@
  */
 package com.mycompany.temp.dao;
 
-import com.mycompany.sample.model.id;
+import com.mycompany.temp.model.id;
 
 /**
  *
  * @author AGI03
  */
 public class id_dao {
-      public id getid(int id)
+      public id getId(int aid )
     {
         id a = new id();
         a.setId(10);
