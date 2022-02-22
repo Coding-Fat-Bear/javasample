@@ -1,4 +1,5 @@
-    <%-- 
+<%@page import="com.mycompany.temp.model.Id"%>
+<%-- 
     Document   : result
     Created on : Feb 21, 2022, 1:15:57 AM
     Author     : AGI03
@@ -12,6 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body bgcolor="orange">
-       <%= request.getAttribute("id") %>
+        <% Id a1 = (Id)request.getAttribute("id");
+            out.println(a1.getId()); %>
     </body>
 </html>

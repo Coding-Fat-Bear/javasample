@@ -2,7 +2,7 @@
 package com.mycompany.temp.name;
 
 import com.mycompany.temp.dao.id_dao;
-import com.mycompany.temp.model.id;
+import com.mycompany.temp.model.Id;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,9 +21,9 @@ public class NewServlet extends HttpServlet {
             throws ServletException, IOException {
        int iad = Integer.parseInt(request.getParameter("id"));
        id_dao dao = new id_dao();
-       id a1 = dao.getId(iad);
+       Id a1 = dao.getId(iad);
        
-        request.setAttribute("id", iad);
+        request.setAttribute("id", a1);
         RequestDispatcher rd = request.getRequestDispatcher("result.jsp");
         rd.forward(request, response);
 //        response.setContentType("text/html;charset=UTF-8");
