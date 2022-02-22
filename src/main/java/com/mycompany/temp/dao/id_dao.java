@@ -5,16 +5,16 @@
  */
 package com.mycompany.temp.dao;
 
-import com.mycompany.temp.model.Id;
+import com.mycompany.temp.model.id;
 
 /**
  *
  * @author AGI03
  */
 public class id_dao {
-      public Id getId(int aid )
+      public id getId(int aid )
     {
-        Id a = new Id();
+        id a = new id();
         a.setId(10);
         a.setUsername("Lijoe");
         a.setPassword("classic123");
