@@ -10,7 +10,7 @@ package com.mycompany.temp.model;
  * @author AGI03
  */
 public class id {
-     private int id;
+     private int id ;
 	private String username;
 	private String password;
 

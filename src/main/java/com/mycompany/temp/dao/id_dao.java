@@ -22,7 +22,7 @@ public class id_dao {
         System.out.println("***");
         try
         {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://agn.db.mysql.agnieindia.com:3306/agnieportal","db_user","AgnChennai@2021");
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("select * from Login_Master where LOGINID=" + aid);
@@ -42,4 +42,5 @@ public class id_dao {
                     }
         return a;
     }
+      
 }

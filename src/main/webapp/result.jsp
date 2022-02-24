@@ -14,6 +14,7 @@
     </head>
     <body bgcolor="orange">
         <% id a1 = (id)request.getAttribute("id");
-            out.println(a1.getUsername()); %>
+            out.println(a1.getUsername());
+            out.println(a1.getPassword());%>
     </body>
 </html>
