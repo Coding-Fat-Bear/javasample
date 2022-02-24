@@ -19,7 +19,6 @@ public class id_dao {
       public id getId(int aid )
     {
         id a = new id();
-        System.out.println("***");
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -31,13 +30,11 @@ public class id_dao {
                a.setId(rs.getInt("LOGINID"));
                a.setUsername(rs.getString("USERNAME"));
                a.setPassword(rs.getString("PASSWORD"));
-                System.out.println("***");
                System.out.println(rs.getInt("LOGINID"));
            }
            
         }
-        catch(Exception e)
-        {   System.out.println("eeeeeeeeeeeeeeerrrrrrrrrrrrrrrooooooooooooooorrrrrrrrrrrrrr");
+        catch(Exception e){
             System.out.println(e);
                     }
         return a;
