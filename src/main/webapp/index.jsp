@@ -21,6 +21,7 @@
         <input type="text" name="id">
         <input type="submit">
     </form>
+   
     <form action="" method="post">
         <table  style="width: 40%;" align="center">
                <tr>
@@ -36,23 +37,18 @@
                        while(rs.next())
                        {
                           %> 
-                          <option  value="<%=rs.getInt("BPNO")%>"
+                          <option  value="<%=rs.getString("BPNO")%>"
                                      <% 
                           if(request.getParameter("bhead")!=null)
                           {
-                             if(rs.getInt("BPNO")==Integer.parseInt(request.getParameter("bhead")))
+                             if(rs.getString("BPNO").equals(request.getParameter("bhead")))
                              {
                                  out.print("selected");
                                  
                              }
                           }
                           
-                          %>     
-                                   
-                                   
-                                   >
-                              
-                               
+                          %> >
                               <%=rs.getString("BPDES")%></option>
                           <%
                        }
@@ -62,7 +58,7 @@
                     {
                         ex.printStackTrace();
                     }
-                    %>
+                    %>     
         </select> </td>
                 </tr>
          <tr>
@@ -80,7 +76,7 @@
                        while(rs.next())
                        {
                           %> 
-                          <option value="<%=rs.getInt("BPITEM")%>">
+                          <option value="<%=rs.getString("BPITEM")%>">
                               <%=rs.getString("BPNAME")%></option>
                           <%
                        }

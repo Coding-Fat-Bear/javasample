@@ -11,7 +11,7 @@ public class bis_dao {
      public  ResultSet getBisHead( ) throws ClassNotFoundException, SQLException
     {
         
-            String Query="select * from Businesspartner_Master";
+            String Query="select * from Businesspartner_Master limit 3";
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://agn.db.mysql.agnieindia.com:3306/agnieportal","db_user","AgnChennai@2021");
             Statement st = con.createStatement();
