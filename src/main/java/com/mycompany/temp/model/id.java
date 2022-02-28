@@ -10,7 +10,7 @@ package com.mycompany.temp.model;
  * @author AGI03
  */
 public class id {
-     private int id;
+     private int id ;
 	private String username;
 	private String password;
 
@@ -38,5 +38,8 @@ public class id {
         this.password = password;
     }
 
-    
+    @Override
+    public String toString() {
+        return "id{" + "id=" + id + ", username=" + username + ", password=" + password + '}';
+    }
 }

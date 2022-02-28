@@ -23,22 +23,9 @@ public class NewServlet extends HttpServlet {
        id_dao dao = new id_dao();
        id a1 = dao.getId(iad);
        
-        request.setAttribute("id", iad);
+        request.setAttribute("id", a1);
         RequestDispatcher rd = request.getRequestDispatcher("result.jsp");
-        rd.forward(request, response);
-//        response.setContentType("text/html;charset=UTF-8");
-//        try (PrintWriter out = response.getWriter()) {
-//            /* TODO output your page here. You may use following sample code. */
-//            out.println("<!DOCTYPE html>");
-//            out.println("<html>");
-//            out.println("<head>");
-//            out.println("<title>Servlet NewServlet</title>");            
-//            out.println("</head>");
-//            out.println("<body>");
-//            out.println("<h1>Servlet NewServlet lijoe at " + request.getContextPath() + "</h1>");
-//            out.println("</body>");
-//            out.println("</html>");
-//        }
+        rd.forward(request, response);      
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
